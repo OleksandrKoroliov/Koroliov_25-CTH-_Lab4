@@ -1,0 +1,301 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    display: grid;
+    place-items: center;
+    font-family: 'Raleway', sans-serif;
+}
+a {
+    text-decoration: none;
+}
+.header {
+    width: 1600px;
+    height: 1000px;
+    background-image: url(../img/banner.jpg);
+    padding-left: 100px;
+    padding-right: 100px;
+    padding: 50px 100px 0px;
+}
+.nav {
+    width: 1400px;
+    height: auto;
+    padding: 0px 100px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo, .menu_nav {
+    margin: 0;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo {
+    width: 200px;
+    height: 80px;
+    background-color: black;
+    font-size: 35px;
+}
+.logo a {
+    color: white;
+}
+.menu_nav {
+    width: 50px;
+    height: 36px;
+    border-top: 4px solid white;
+    border-bottom: 4px solid white;
+    font-size: 15px;
+    color: white;
+}
+.menu_nav a {
+    text-decoration: none;
+    color: white;
+}
+.block_title {
+    padding-top: 200px;
+    width: 100%;
+    height: 626px;
+    text-align: right;
+    color: white;
+    display: flex;
+    justify-content:center;
+    flex-direction: column;
+    padding-right: 80px;
+}
+.title_text {
+    font-weight: 100;
+    font-size: 220px;
+    letter-spacing: 15px;
+    line-height: 170px;
+}
+.description_text {
+    padding-right: 18px;
+    letter-spacing: 5px;
+    font-weight: 600;
+    font-size: 64px;
+}
+.radio {
+    width: 100%;
+    height: 244px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.radio input[type="radio"] {
+    margin-right: 24px;
+    appearance: none;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: #000;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+.radio input[type="radio"]:checked {
+    background-color: #fff;
+}
+.description_site {
+    width: 1600px;
+    height: 670px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+.title_description_site {
+    width: 970px;
+}
+.title_description_site h2 {
+    font-weight: 200;
+    font-size: 60px;
+    margin-bottom: 7px;
+}
+.title_description_site h3 {
+    font-weight: 700;
+    font-size: 60px;
+    margin-bottom: 30px;
+}
+.title_description_site p:nth-child(3) {
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 50px;
+}
+.title_description_site hr {
+    margin: auto;
+    width: 80px;
+    height: 4px;
+    background-color: #000;
+    margin-bottom: 60px;
+}
+.title_description_site p:nth-child(5), 
+.title_description_site p:nth-child(6) {
+    margin-bottom: 30px;
+    font-weight: 500;
+    font-size: 20px;
+}
+.slidenew {
+    width: 1600px;
+    height: 650px;
+    background-color: #ffe9e2;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.container_slidenew {
+    width: 50%;
+    padding: 0 100px;
+    font-size: 36px;
+    display: flex;
+    flex-direction: column;
+    line-height: 50px;
+}
+.container_slidenew h3 {
+    margin-top: 75px;
+}
+.container_slidenew span {
+    margin-top: 55px;
+}
+.slidenew_radio {
+    width: 100%;
+}
+.slidenew_radio input[type="radio"] {
+    appearance: none;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    border: 1px solid #949088;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+    margin-right: 4px;
+}
+.slidenew_radio input[type="radio"]:checked {
+    background-color: #949088;
+}
+.category {
+    padding: 120px 100px;
+    width: 1600px;
+    height: 1160px;
+    background-color: #fff;
+}
+.category_items {
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.container_category {
+    width: 100%;
+}
+.container_category h1 {
+    font-weight: 700;
+    font-size: 60px;
+    margin-bottom: 45px;
+}
+.container_category hr {
+    width: 80px;
+    height: 4px;
+    background-color: #000;
+    margin-bottom: 60px;
+}
+.container_items {
+    margin: 0;
+    width: 700px;
+    height: 285px;
+    border: 1px solid #d8d8d8;
+    padding: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.container_items h4 {
+    font-size: 30px;
+    text-transform: uppercase;
+}
+.container_items p {
+    font-weight: 500;
+    font-size: 25px;
+}
+.container_items span {
+    font-weight: 500;
+    font-size: 25px;
+    font-style: italic;
+}
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.container_category button {
+    margin-top: 60px;
+    width: 280px;
+    height: 60px;
+    background-color: #fff;
+    border-radius: 3px;
+    border: 2px solid black;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    cursor: pointer;
+    transition: width 0.2s ease-out, background-color 0.2s;
+}
+.container_category button:hover {
+    width: 290px;
+}
+.event {
+    width: 1600px;
+    height: 660px;
+    background-image: url(../img/Layer\ 6.png);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+.event_container {
+    width: 100%;
+    padding: 0 100px;
+    color: #fff;
+}
+.event_container h4{
+    font-size: 60px;
+    margin-bottom: 80px;
+}
+.event_container p{
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+.event_container a {
+    color: #fff;
+    border-bottom: 2px solid rgb(189, 189, 189);
+}
+.catalog {
+    width: 1600px;
+    padding: 80px 100px;
+    height: auto;
+    background-color: #fff;
+}
+.catalog h1 {
+    font-weight: 700;
+    font-size: 60px;
+    margin-bottom: 45px;
+}
+.catalog hr {
+    width: 80px;
+    height: 4px;
+    background-color: #000;
+    margin-bottom: 60px;
+}
+.catalog_items {
+    display: flex;
+  flex-wrap: wrap;
+}
