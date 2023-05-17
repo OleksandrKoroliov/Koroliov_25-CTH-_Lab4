@@ -11,6 +11,10 @@ html {
 a {
     text-decoration: none;
 }
+@font-face {
+    font-family: 'GreatLakesNF';
+    src: url('../fonts/GreatLakesNF.ttf');
+  }
 .header {
     width: 1600px;
     height: 1000px;
@@ -280,7 +284,7 @@ a {
 }
 .catalog {
     width: 1600px;
-    padding: 80px 100px;
+    padding: 80px 100px 100px;
     height: auto;
     background-color: #fff;
 }
@@ -295,7 +299,237 @@ a {
     background-color: #000;
     margin-bottom: 60px;
 }
-.catalog_items {
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 80px;
+    grid-row-gap: 50px;
+}
+.photo1 {
+    background-image: url(../img/Layer\ 1.png);
+    width: 560px;
+    height: 760px;
+    text-transform: uppercase;
+    grid-column: 1;
+    grid-row: 1 / span 2;
+    font-family: 'TW Cen MT Condensed', sans-serif;
+    font-size: 70px;
+    font-weight: 700;
+    color: white;
+    line-height: 100px;
+    letter-spacing: 3px;
+    padding: 30px;
+    transition: box-shadow 0.5s;
+}
+.photo1:hover {
+    box-shadow: 0px 0px 50px 20px#d8d4c9;
+}
+.photo1_content {
+    margin-top: 120px;
+    text-align: center;
+    width: 100%;
+    height: 400px;
+}
+.content_item {
     display: flex;
-  flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 130px;
+    font-size: 16px;
+}
+.content_item a{
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 5px;
+    color: white;
+}
+.photo2 {
+    background-image: url(../img/Layer\ 2.png);
+    margin-left: 20px;
+    width: 740px;
+    height: 370px;
+    padding: 20px;
+    grid-column: 2 / span 3;
+    grid-row: 1;
+    padding: 90px 78px;
+    transition: box-shadow 0.5s;
+}
+.photo2:hover {
+    box-shadow: 0px 0px 50px 20px#d8d4c9;
+}
+.photo2 p{
+    font-family: 'Times New Roman', sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    font-style: italic;
+    margin-bottom: 15px;
+}
+.photo2 span{
+    font-family: Georgia, sans-serif;
+    font-size: 20px;
+}
+.photo3 {
+    background-image: url(../img/Layer\ 3.png);
+    margin-left: 20px;
+    width: 330px;
+    height: 340px;
+    padding: 20px;
+    grid-column: 2;
+    grid-row: 2;
+    transition: box-shadow 0.5s;
+    font-family: 'GreatLakesNF', sans-serif;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+}
+.photo3:hover {
+    box-shadow: 0px 0px 50px 20px#d8d4c9;
+}
+.photo4 {
+    background-image: url(../img/Layer\ 5.png);
+    width: 330px;
+    height: 340px;
+    padding: 20px;
+    grid-column: 3;
+    grid-row: 2;
+    transition: box-shadow 0.5s;
+    font-family: 'Lato', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
+.photo4 :first-child {
+    font-size: 30px;
+    font-weight: 700;
+}
+.photo4 :last-child {
+    font-size: 37px;
+    font-weight: 900;
+}
+.photo4:hover {
+    box-shadow: 0px 0px 50px 20px#d8d4c9;
+}
+.catalog button {
+    margin-top: 60px;
+    width: 280px;
+    height: 60px;
+    background-color: #fff;
+    border-radius: 3px;
+    border: 2px solid black;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    cursor: pointer;
+    letter-spacing: 3px;
+    transition: width 0.2s ease-out, background-color 0.2s;
+}
+.catalog button:hover {
+    width: 290px;
+}
+.contact {
+    width: 1600px;
+    padding: 0 100px 100px;
+    height: 550px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+.contact_item {
+    padding: 30px 0;
+    height: 300px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+}
+.contact_item h5, .subscribe h5 {
+    text-transform: uppercase;
+    font-size: 20px;
+}
+.list{
+    margin-top: 50px;
+    list-style: none;
+    color: black;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 3px;
+}
+.list li {
+    margin-top: 15px;
+}
+.list a{
+    color: black;
+}
+.contact_item p {
+    margin-top: 45px;
+    list-style: none;
+    color: black;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 3px;
+    line-height: 30px;
+}
+.contact :first-child {
+    width: 320px;
+}
+.contact :nth-child(2) {
+    width: 320px;
+}
+.contact :nth-child(3) {
+    width: 440px;
+}
+.contact :last-child {
+}
+.email input {
+    margin-top: 30px;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid #e6e5e5;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    letter-spacing: 2px;
+    padding-left: 15px;
+}
+.contact_item input:focus {
+    outline: none;
+    border-color: #b9b9b9;
+}
+.subscribe button {
+    margin-top: 15px;
+    width: 130px;
+    height: 40px;
+    background-color: #fff;
+    border-radius: 3px;
+    border: 2px solid black;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    cursor: pointer;
+    letter-spacing: 3px;
+    transition: width 0.2s ease-out, background-color 0.2s;
+}
+.subscribe {
+    width: 320px;
+    padding: 30px 0;
+    height: 300px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+}
+.subscribe p {
+    margin-top: 20px;
+}
+footer {
+    width: 1600px;
+    padding: 25px 100px 25px;
+    font-family: 'Montserrat';
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.social a {
+    margin-left: 20px;
 }
