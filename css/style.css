@@ -103,7 +103,7 @@ a {
 .radio input[type="radio"]:checked {
     background-color: #fff;
 }
-.description_site {
+.about {
     width: 1600px;
     height: 670px;
     background-color: white;
@@ -113,38 +113,38 @@ a {
     flex-direction: column;
     text-align: center;
 }
-.title_description_site {
+.about_description {
     width: 970px;
 }
-.title_description_site h2 {
+.about_description h2 {
     font-weight: 200;
     font-size: 60px;
     margin-bottom: 7px;
 }
-.title_description_site h3 {
+.about_description h3 {
     font-weight: 700;
     font-size: 60px;
     margin-bottom: 30px;
 }
-.title_description_site p:nth-child(3) {
+.about_description p:nth-child(3) {
     font-weight: 600;
     font-size: 20px;
     margin-bottom: 50px;
 }
-.title_description_site hr {
+.about_description hr {
     margin: auto;
     width: 80px;
     height: 4px;
     background-color: #000;
     margin-bottom: 60px;
 }
-.title_description_site p:nth-child(5), 
-.title_description_site p:nth-child(6) {
+.about_description p:nth-child(5), 
+.about_description p:nth-child(6) {
     margin-bottom: 30px;
     font-weight: 500;
     font-size: 20px;
 }
-.slidenew {
+.slide {
     width: 1600px;
     height: 650px;
     background-color: #ffe9e2;
@@ -153,7 +153,7 @@ a {
     justify-content: space-between;
     align-items: center;
 }
-.container_slidenew {
+.container_slide {
     width: 50%;
     padding: 0 100px;
     font-size: 36px;
@@ -161,16 +161,16 @@ a {
     flex-direction: column;
     line-height: 50px;
 }
-.container_slidenew h3 {
+.container_slide h3 {
     margin-top: 75px;
 }
-.container_slidenew span {
+.container_slide span {
     margin-top: 55px;
 }
-.slidenew_radio {
+.slide_radio {
     width: 100%;
 }
-.slidenew_radio input[type="radio"] {
+.slide_radio input[type="radio"] {
     appearance: none;
     width: 13px;
     height: 13px;
@@ -180,16 +180,16 @@ a {
     cursor: pointer;
     margin-right: 4px;
 }
-.slidenew_radio input[type="radio"]:checked {
+.slide_radio input[type="radio"]:checked {
     background-color: #949088;
 }
-.category {
+.gallery {
     padding: 120px 100px;
     width: 1600px;
     height: 1160px;
     background-color: #fff;
 }
-.category_items {
+.gallery_items {
     margin-top: 100px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
